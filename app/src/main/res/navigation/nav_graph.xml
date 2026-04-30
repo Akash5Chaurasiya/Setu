@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/historyFragment">
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.contextai.presentation.history.HistoryFragment"
+        android:label="@string/history_title" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.contextai.presentation.settings.SettingsFragment"
+        android:label="@string/settings_title" />
+
+</navigation>
