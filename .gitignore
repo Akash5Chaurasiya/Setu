@@ -1,0 +1,21 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Keystores — never commit signing keys
+*.jks
+*.keystore
+
+# Security reports
+security_report.*
+*.pdf
+
+# Claude Code local settings
+.claude/
