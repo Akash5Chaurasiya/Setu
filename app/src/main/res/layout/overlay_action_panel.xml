@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Dimmed background — tap to dismiss -->
+    <View
+        android:id="@+id/viewDimBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dim_overlay" />
+
+    <!-- Bottom sheet card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:cardCornerRadius="@dimen/panel_corner_radius_top"
+        app:cardElevation="@dimen/panel_elevation"
+        app:cardBackgroundColor="?attr/colorSurface">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/panel_padding">
+
+            <!-- Header: drag handle + app name + close -->
+            <View
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/spacing_md"
+                android:background="@color/color_secondary"
+                android:backgroundTintMode="src_atop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/spacing_sm">
+
+                <TextView
+                    android:id="@+id/tvAppName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_lg"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorOnSurface" />
+
+                <ImageButton
+                    android:id="@+id/btnClose"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_close"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/btn_close"
+                    android:tint="?attr/colorOnSurface" />
+            </LinearLayout>
+
+            <!-- Context summary -->
+            <TextView
+                android:id="@+id/tvContextSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_md"
+                android:textSize="@dimen/text_sm"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <!-- Context-specific action chips -->
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupActions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_md"
+                app:singleLine="false" />
+
+            <!-- AI Response area -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardResponse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/spacing_md"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:cardBackgroundColor="?attr/colorSurfaceVariant">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_sm">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+
+                    <ScrollView
+                        android:id="@+id/scrollViewResponse"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <TextView
+                            android:id="@+id/tvResponse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/spacing_xs"
+                            android:textSize="@dimen/text_body"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:textIsSelectable="true" />
+                    </ScrollView>
+
+                    <Button
+                        android:id="@+id/btnRetry"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="@string/btn_retry" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Smart action chips (post-response) -->
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupSmartActions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/spacing_sm"
+                app:singleLine="true" />
+
+            <!-- Free-text input -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etUserQuery"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/spacing_sm"
+                    android:inputType="textMultiLine"
+                    android:maxLines="3"
+                    android:background="@null"
+                    android:textSize="@dimen/text_body" />
+
+                <ImageButton
+                    android:id="@+id/btnSend"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_send"
+                    android:background="?attr/colorPrimary"
+                    android:contentDescription="@string/btn_send"
+                    android:tint="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/bubble_size"
+    android:layout_height="@dimen/bubble_size">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabBubble"
+        android:layout_width="@dimen/bubble_size"
+        android:layout_height="@dimen/bubble_size"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:focusable="false"
+        android:src="@drawable/ic_bubble_notification"
+        android:contentDescription="@string/app_name"
+        app:backgroundTint="@color/bubble_background"
+        app:tint="@color/bubble_icon_tint"
+        app:elevation="@dimen/bubble_elevation"
+        xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+</FrameLayout>
