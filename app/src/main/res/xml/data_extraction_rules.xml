@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="sharedpref" path="contextai_prefs.xml" />
+        <exclude domain="sharedpref" path="contextai_secure_prefs.xml" />
+        <exclude domain="sharedpref" path="consent_prefs.xml" />
+        <exclude domain="database" path="contextai_db" />
+        <exclude domain="file" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="sharedpref" path="contextai_secure_prefs.xml" />
+        <exclude domain="sharedpref" path="consent_prefs.xml" />
+        <exclude domain="database" path="contextai_db" />
+    </device-transfer>
+</data-extraction-rules>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.ContextAI" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="android:windowBackground">@color/color_surface</item>
+    </style>
+
+    <style name="Theme.ContextAI" parent="Base.Theme.ContextAI" />
+
+    <style name="Theme.ContextAI.Overlay" parent="Theme.Material3.DayNight">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

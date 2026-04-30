@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ContextAI</string>
+
+    <string name="accessibility_service_label">ContextAI Screen Reader</string>
+    <string name="accessibility_service_description">ContextAI reads screen content only when you tap the floating bubble — never in the background. Sensitive apps (banking, health, password managers) are automatically blocked. OTPs, card numbers, Aadhaar, and PAN are redacted before any data is sent to the AI. No data is stored on our servers.</string>
+
+    <string name="notification_channel_name">ContextAI Bubble</string>
+    <string name="notification_channel_desc">Persistent notification for the floating AI assistant bubble</string>
+    <string name="notification_title">ContextAI is running</string>
+    <string name="notification_text">Tap the floating bubble to get AI assistance</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="provider_section">AI Provider</string>
+    <string name="provider_anthropic">Anthropic</string>
+    <string name="provider_openai">OpenAI</string>
+    <string name="provider_gemini">Gemini</string>
+    <string name="gemini_free_note">Free tier · no credit card required</string>
+    <string name="provider_groq">Groq</string>
+    <string name="groq_free_note">Free · 14,400 req/day · fast inference</string>
+
+    <string name="api_key_section">API Key</string>
+    <string name="api_key_hint">Enter your API key</string>
+    <string name="api_key_set">✓ API key configured</string>
+    <string name="api_key_not_set">✗ No API key — add one to use AI features</string>
+    <string name="api_key_not_configured">✗ No key saved</string>
+    <string name="api_key_saved">API key saved securely</string>
+    <string name="btn_save_key">Save Key</string>
+
+    <string name="profile_section">Your Profile</string>
+    <string name="hint_name">Your name</string>
+    <string name="hint_role">Current role (e.g. Software Engineer)</string>
+    <string name="hint_skills">Key skills (e.g. Kotlin, React, Python)</string>
+    <string name="hint_experience">Years of experience</string>
+    <string name="profile_saved">Profile saved</string>
+    <string name="btn_save_profile">Save Profile</string>
+
+    <string name="permissions_section">Permissions</string>
+    <string name="permission_overlay">Overlay (Draw over apps)</string>
+    <string name="permission_accessibility">Accessibility (Screen reading)</string>
+    <string name="permission_granted">✓ Granted</string>
+    <string name="permission_not_granted">✗ Not granted</string>
+    <string name="btn_grant_overlay">Grant Overlay Permission</string>
+    <string name="btn_grant_accessibility">Grant Accessibility Permission</string>
+
+    <string name="history_title">History</string>
+    <string name="history_count">%d conversations saved</string>
+    <string name="history_cleared">History cleared</string>
+    <string name="clear_history_title">Clear History</string>
+    <string name="clear_history_message">This will permanently delete all saved conversations. This cannot be undone.</string>
+    <string name="btn_clear_history">Clear History</string>
+    <string name="history_empty">No conversations yet.\nTap the floating bubble to start.</string>
+
+    <string name="toggle_lock_screen">Show bubble on lock screen</string>
+    <string name="toggle_auto_detect">Auto-detect screen context</string>
+
+    <string name="hint_ask_anything">Ask anything about this screen…</string>
+    <string name="context_undetected">Could not read screen content</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_retry">Retry</string>
+    <string name="btn_close">Close</string>
+
+    <string name="action_draft_email">Draft Application Email</string>
+    <string name="action_summarize_requirements">Summarize Requirements</string>
+    <string name="action_check_fit">Check My Fit</string>
+    <string name="action_summarize_cart">Summarize Cart</string>
+    <string name="action_suggest_alternatives">Suggest Alternatives</string>
+    <string name="action_calculate_calories">Calculate Calories</string>
+    <string name="action_plan_trip">Plan This Trip</string>
+    <string name="action_estimate_cost">Estimate Total Cost</string>
+    <string name="action_add_calendar">Add to Calendar</string>
+    <string name="action_summarize">Summarize Page</string>
+    <string name="action_ask_ai">Ask AI</string>
+    <string name="action_copy_info">Copy Key Info</string>
+
+    <string name="action_copy">Copy</string>
+    <string name="action_share">Share</string>
+    <string name="action_open_gmail">Open in Gmail</string>
+    <string name="action_stop_service">Stop</string>
+
+    <string name="error_open_gmail">Gmail not available</string>
+    <string name="error_open_calendar">Calendar not available</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+
+    <string name="onboarding_step1_title">Welcome to ContextAI</string>
+    <string name="onboarding_step1_desc">A floating AI assistant that understands what\'s on your screen and takes action. Powered by Claude.</string>
+    <string name="onboarding_step2_title">Allow Drawing Over Apps</string>
+    <string name="onboarding_step2_desc">ContextAI needs permission to show the floating bubble over other apps. Find \"ContextAI\" in the list and enable it.</string>
+    <string name="onboarding_step3_title">Enable Accessibility Service</string>
+    <string name="onboarding_step3_desc">Allows ContextAI to read screen content when you tap the bubble. Find \"ContextAI Screen Reader\" and enable it.\n\nNo data is collected passively — reading only happens when you tap the bubble.</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="done">Done</string>
+    <string name="grant_overlay_permission">Grant Permission</string>
+    <string name="grant_accessibility">Enable Service</string>
+
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="clear">Clear</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="action_new_conversation">New conversation</string>
+    <string name="error_timeout">Request timed out. Please try again.</string>
+    <string name="session_tokens">Session tokens used: %d</string>
+    <string name="btn_report_bug">Report Bug</string>
+    <string name="logs_copied">Debug logs copied to clipboard</string>
+</resources>

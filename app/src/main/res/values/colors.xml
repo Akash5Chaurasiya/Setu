@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="color_primary">#6750A4</color>
+    <color name="color_primary_container">#EADDFF</color>
+    <color name="color_secondary">#625B71</color>
+    <color name="color_surface">#FFFBFE</color>
+    <color name="color_surface_dark">#1C1B1F</color>
+    <color name="color_on_surface">#1C1B1F</color>
+    <color name="color_on_surface_dark">#E6E1E5</color>
+
+    <color name="bubble_background">#6750A4</color>
+    <color name="bubble_icon_tint">#FFFFFF</color>
+    <color name="panel_background">#FFFBFE</color>
+    <color name="panel_background_dark">#2D2C31</color>
+
+    <color name="status_green">#2E7D32</color>
+    <color name="status_red">#C62828</color>
+    <color name="status_green_dark">#4CAF50</color>
+    <color name="status_red_dark">#EF5350</color>
+
+    <color name="dim_overlay">#80000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Settings cards -->
+    <color name="settings_card_bg">#F2F2F7</color>
+
+    <!-- Provider icon circle backgrounds -->
+    <color name="icon_circle_purple">#6C63FF</color>
+    <color name="icon_circle_dark">#1A1A1A</color>
+    <color name="icon_circle_blue">#4285F4</color>
+    <color name="icon_circle_orange">#F97316</color>
+</resources>
